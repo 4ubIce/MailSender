@@ -91,11 +91,19 @@ public class MailController {
 
     public boolean checkFields() {
         boolean result = true;
-        if ((!checkFromLine()) ||
-                (!checkToLine()) ||
-                (!checkSubject()) ||
-                (!modifyBody()) ||
-                (!addFooterToBody())) {
+        if (!checkFromLine()) {
+            result = false;
+        }
+        if (checkToLine()) {
+            result = false;
+        }
+        if (checkSubject()) {
+            result = false;
+        }
+        if (modifyBody()) {
+            result = false;
+        }
+        if (addFooterToBody()) {
             result = false;
         }
         return result;
@@ -161,6 +169,34 @@ public class MailController {
         return result;
     }
 
+    public boolean checkEmailString(StyledDocument document, LinkedHashMap<String,
+                                    int[]> emails) {
+        boolean result = true;
+        int isValidEmail, startPos = 0, endPos = document.getLength();
+
+        Set<Map.Entry<String, int[]>> set = emails.entrySet();
+        for (Map.Entry<String, int[]> s : set) {
+            if (startPos != s.getValue()[1]) {
+                setAttribute(document, startPos,
+                        s.getValue()[1] - startPos, attributesRed);
+                result = false;
+            }
+            startPos = s.getValue()[2];
+            isValidEmail = s.getValue()[0];
+            if (isValidEmail == 0) {
+                setAttribute(document, s.getValue()[1],
+                        s.getValue()[2] - s.getValue()[1], attributesRed);
+                result = false;
+            }
+        }
+        if (startPos != endPos) {
+            setAttribute(document, startPos,
+                    endPos - startPos, attributesRed);
+            result = false;
+        }
+        return !result;
+    }
+
     public boolean checkFromLine() {
 
         boolean result;
@@ -174,39 +210,24 @@ public class MailController {
             setAttribute(fromStyledDocument, 0,
                         fromStyledDocument.getLength(), attributesRed);
             result = false;
+        } else {
+            if (checkEmailString(fromStyledDocument, emails)) {
+                result = false;
+            }
         }
         return result;
     }
 
     public boolean checkToLine() {
         boolean result;
-        int isValidEmail, startPos = 0, endPos = toLine.getStyledDocument().getLength();
-        String text = toLine.getText();
-        LinkedHashMap<String, int[]> emails = getEmails(text);
+        LinkedHashMap<String, int[]> emails = getEmails(toLine.getText());
 
-        result = isUTF8Charset(text);
+        result = isUTF8Charset(toLine.getText());
         if (emails.isEmpty()) {
             toLine.setBorder(BorderFactory.createLineBorder(Color.red));
             result = false;
         } else {
-            Set<Map.Entry<String, int[]>> set = emails.entrySet();
-            for (Map.Entry<String, int[]> s : set) {
-                if (startPos != s.getValue()[1]) {
-                    setAttribute(toStyledDocument, startPos,
-                            s.getValue()[1] - startPos, attributesRed);
-                    result = false;
-                }
-                startPos = s.getValue()[2];
-                isValidEmail = s.getValue()[0];
-                if (isValidEmail == 0) {
-                    setAttribute(toStyledDocument, s.getValue()[1],
-                            s.getValue()[2] - s.getValue()[1], attributesRed);
-                    result = false;
-                }
-            }
-            if (startPos != endPos) {
-                setAttribute(toStyledDocument, startPos,
-                        endPos - startPos, attributesRed);
+            if (checkEmailString(toStyledDocument, emails)) {
                 result = false;
             }
         }
