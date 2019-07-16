@@ -23,10 +23,7 @@ public class MailControllerTest {
     private static JTextPane         footerArea                     = mailController.getFooterArea();
 
     private HTMLDocument             bodyStyledDocument             = (HTMLDocument )bodyArea.getStyledDocument();
-    private StyledDocument           fromStyledDocument             = fromLine.getStyledDocument();
     private StyledDocument           toStyledDocument               = toLine.getStyledDocument();
-    private StyledDocument           subjectStyledDocument          = subjectLine.getStyledDocument();
-    private StyledDocument           footerStyledDocument           = footerArea.getStyledDocument();
 
     private String                   errorEmailsString              = "asdad, dasdasd@asdda.das, fasgdsgfa," +
                                                                       " assdaf <asdf@asfd.fdsa.fds> fsaffd";
@@ -53,20 +50,32 @@ public class MailControllerTest {
                                                                       "    \n" +
                                                                       "  </head>\n" +
                                                                       "  <body>\n" +
-                                                                      "    asdasd asdasd, des: asdasd des? ewr ewr1 ? ewr\n" +
+                                                                      "    <p style=\"margin-top: 0\">\n" +
+                                                                      "      asdasd asdasd, des: asdasd des? ewr ewr1 ? ewr\n" +
+                                                                      "    </p>\n" +
                                                                       "  </body>\n" +
                                                                       "</html>\n";
-    private static String            defaultFooterString            = "footer text";
-
-    private String expectedBodyString                               = "<html>\n" +
+    private String                   expectedBodyString             = "<html>\n" +
                                                                       "  <head>\n" +
                                                                       "    \n" +
                                                                       "  </head>\n" +
                                                                       "  <body>\n" +
-                                                                      "    asdasd <strong>asdasd</strong>, des: <strong>asdasd</strong> <strong>des</strong>? \n" +
-                                                                      "    ewr ewr1 ? <strong>ewr</strong>\n" +
+                                                                      "    <p style=\"margin-top: 0\">\n" +
+                                                                      "      asdasd <strong>asdasd</strong>, des: <strong>asdasd</strong> <strong>des</strong>? \n" +
+                                                                      "      ewr ewr1 ? <strong>ewr</strong>\n" +
+                                                                      "    </p>\n" +
                                                                       "  </body>\n" +
                                                                       "</html>\n";
+
+    private static String            defaultFooterString            = "footer text";
+    private String                   expectedFooterString           = "\nfooter text";
+
+    private String                   dateString1                    = "2002-11-28 21:19";
+    private String                   expectedDateString1            = "<i>2002-11-28 21:19</i>";
+    private String                   dateString2                    = "2001-11-28_21:19:54.621";
+    private String                   expectedDateString2            = "<u>2001-11-28_21:19:54.621</u>";
+    private String                   dateString3                    = "2002/11/28~21:19:27";
+    private String                   expectedDateString3            = "<s>2002/11/28~21:19:27</s>";
 
     @BeforeClass
     public static void runOnceBeforeClass() {
@@ -202,7 +211,7 @@ public class MailControllerTest {
     @Test
     public void modifyBody() {
         assertTrue(mailController.modifyBody());
-        assertTrue(bodyArea.getText().equals(expectedBodyString));
+        assertEquals(expectedBodyString, bodyArea.getText());
         bodyArea.setText(defaultBodyString);
         System.out.println("MailController.modifyBody()........ok");
     }
@@ -210,16 +219,25 @@ public class MailControllerTest {
     @Test
     public void addFooterToBody() {
 
-        String expectedString = "\nfooter text";
+        expectedFooterString = "\nfooter text";
 
         bodyArea.setText("");
         assertTrue(mailController.addFooterToBody());
         try {
-            assertTrue(bodyArea.getText(0, bodyStyledDocument.getLength()).equals(expectedString));
+            assertTrue(bodyArea.getText(0, bodyStyledDocument.getLength()).equals(expectedFooterString));
         } catch (BadLocationException e) {
             e.printStackTrace();
         }
         bodyArea.setText(defaultBodyString);
         System.out.println("MailController.addFooterToBody()...ok");
+    }
+
+    @Test
+    public void dateSelection() {
+
+        assertEquals(expectedDateString1, mailController.dateSelection(dateString1));
+        assertEquals(expectedDateString2, mailController.dateSelection(dateString2));
+        assertEquals(expectedDateString3, mailController.dateSelection(dateString3));
+        System.out.println("MailController.dateSelection().....ok");
     }
 }
