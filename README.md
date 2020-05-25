@@ -1,4 +1,4 @@
-# Mail sender (using swing gui)
+# Mail sender (using swing gui, regular expressions)
 
 ## Author
 
