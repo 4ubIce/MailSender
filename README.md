@@ -1,45 +1,41 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Mail sender (using swing gui)
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+## Author
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+**Kirill Kupriyanov**
 
----
+## Task
 
-## Edit a file
+Task for using regular expressions and using third-party libraries.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+The form for sending a message has the following fields:
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+1) the sender (FROM).
+2) recipient (TO) or recipients (there may be several of them, then they are separated by commas).
+3) subject of the email
+4) message body (BODY)
+5) the signature (FOOTER).
+6) send button (SEND_BUTTON).
 
----
+When you click the send button, you need to check the validity of entries in the fields, and if it is valid, send the message, otherwise highlight the field with the error in red and pass the input focus there:
+1. Each sender and recipient can be recorded as just an e-mail address sender@example.com, and in the form of the name of the sender with the indication of e-mail in angle brackets Kirill <sender@example.com>. The e-mail entry may be correct. There can only be one sender.
+2. Each recipient in the recipients (TO) field must meet the SENDER entry rules, but there may be many recipients separated by commas (or just one).
+3. Subject can contain only letters of the Spanish, Latin (English), Russian, and Belarusian alphabets (and only lowercase ones), as well as spaces, numbers, punctuation, minus, underscores, and other characters from the readable ASCII part. In this case, the encoding of the email subject is UTF-8, as well as the other fields.
+4. The body of the email (BODY) can contain any characters valid for UTF-8. But before sending, each subsequent word repeated in the text must be enclosed in the html strong tag (highlighted in bold).
+5. The Signature to the message (FOOTER) is added to the end of the BODY before sending, with the characters with gray color.
+6. After successful sending, all fields are cleared, except the SENDER and FOOTER fields.
+7. To check (validate) fields in accordance with the specified rules, use the regular expression mechanism (java.util.regex). The rules are self-written, but you can read the documentation and search for tips on the Internet.
+8. To send a message formed in this way, use a third-party library from spring-email (or another simple one, at your choice). Send using the SMTP Protocol.
 
-## Create a file
+## Starting
 
-Next, you’ll add a new file to this repository.
+in the project folder
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+for run application use:
+```
+gradle run
+```
+for run application testing use:
+```
+gradle test
+```
