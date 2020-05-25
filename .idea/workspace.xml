@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6334ad8b-eda2-43f6-94f1-70c7b7563efa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MailController/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MailController/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MailController/SendButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MailController/SendButtonListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -69,6 +67,18 @@
                 <item name="GT5" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GT5" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GT5" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -93,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,11 +112,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MailController/MailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="329" column="65" lean-forward="true" selection-start-line="329" selection-start-column="65" selection-end-line="329" selection-end-column="65" />
+            <state relative-caret-position="420">
+              <caret line="260" selection-start-line="260" selection-end-line="260" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MailController/SendButtonListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="340">
               <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,11 +136,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MailController/EmailSender.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+              <caret line="26" column="67" lean-forward="true" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/MailInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="148" column="43" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,10 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/java/MailController/SendButtonListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/MailInterface.java" />
         <option value="$PROJECT_DIR$/src/test/java/MailController/SendButtonListenerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MailController/EmailSender.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/MailController/MailController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java" />
       </list>
     </option>
   </component>
@@ -192,6 +230,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,15 +306,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -300,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.task-git3 [test]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GT5.Main" />
       <module name="GT5.main" />
@@ -313,6 +355,44 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="task-git3 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="task-git3 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="MailControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GT5.test" />
@@ -345,45 +425,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MailControllerTest.isValidSubject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GT5.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MailController.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MailController" />
-      <option name="MAIN_CLASS_NAME" value="MailController.MailControllerTest" />
-      <option name="METHOD_NAME" value="isValidSubject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailControllerTest.modifyBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GT5.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MailController.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MailController" />
-      <option name="MAIN_CLASS_NAME" value="MailController.MailControllerTest" />
-      <option name="METHOD_NAME" value="modifyBody" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.task-git3 [test]" />
         <item itemvalue="JUnit.MailControllerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.task-git3 [run]" />
         <item itemvalue="JUnit.MailControllerTest.collectData" />
-        <item itemvalue="JUnit.MailControllerTest.modifyBody" />
-        <item itemvalue="JUnit.MailControllerTest.isValidSubject" />
       </list>
     </recent_temporary>
   </component>
@@ -401,47 +449,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MailControllerTest_modifyBody - 2019.07.16 at 14h 47m 05s.xml">
-      <configuration name="MailControllerTest.modifyBody" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MailControllerTest_modifyBody - 2019.07.16 at 14h 52m 19s.xml">
-      <configuration name="MailControllerTest.modifyBody" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 14h 52m 33s.xml">
+    <history-entry file="MailControllerTest - 2019.07.16 at 19h 27m 30s.xml">
       <configuration name="MailControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MailControllerTest_modifyBody - 2019.07.16 at 14h 54m 12s.xml">
-      <configuration name="MailControllerTest.modifyBody" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 14h 57m 27s.xml">
+    <history-entry file="MailControllerTest - 2020.05.25 at 19h 10m 42s.xml">
       <configuration name="MailControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 14h 57m 43s.xml">
+    <history-entry file="task-git3_[test] - 2020.05.25 at 19h 29m 34s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MailControllerTest - 2020.05.25 at 19h 30m 14s.xml">
       <configuration name="MailControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MailControllerTest_collectData - 2019.07.16 at 15h 03m 26s.xml">
-      <configuration name="MailControllerTest.collectData" configurationId="JUnit" />
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 11m 01s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 15h 03m 31s.xml">
-      <configuration name="MailControllerTest" configurationId="JUnit" />
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 30m 55s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 15h 04m 09s.xml">
-      <configuration name="MailControllerTest" configurationId="JUnit" />
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 31m 21s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="MailControllerTest - 2019.07.16 at 15h 05m 01s.xml">
-      <configuration name="MailControllerTest" configurationId="JUnit" />
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 32m 03s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 37m 28s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="task-git3_[test] - 2020.05.25 at 20h 40m 09s.xml">
+      <configuration name="task-git3 [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2383863" />
+      <window_info id="Project Explorer" />
+      <window_info id="Job Explorer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25061125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32632744" />
@@ -459,7 +511,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.16625917" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -500,6 +552,9 @@
       <configuration name="JUnit">
         <watch expression="bodyArea.getText()" language="JAVA" />
         <watch expression="defaultBodyString" language="JAVA" />
+      </configuration>
+      <configuration name="Remote">
+        <watch expression="subjectLine.getText()" />
       </configuration>
       <configuration name="Application">
         <watch expression="bodyArea.getText()" />
@@ -599,16 +654,6 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/8f1cb192e229bc4cd1c900c51171d96706e6d195/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/8f1cb192e229bc4cd1c900c51171d96706e6d195/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/text/translate/AggregateTranslator.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.9/8f1cb192e229bc4cd1c900c51171d96706e6d195/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MailInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="148" column="43" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -626,17 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,16 +741,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MailController/SendButtonListenerTest.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GT5/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -727,10 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MailInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+        <state relative-caret-position="550">
+          <caret line="148" column="43" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -739,8 +763,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MailController/SendButtonListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="340">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#1482#1483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MailController/MailControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MailController/MailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -750,17 +814,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/MailController/EmailSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+          <caret line="26" column="67" lean-forward="true" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MailController/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="329" column="65" lean-forward="true" selection-start-line="329" selection-start-column="65" selection-end-line="329" selection-end-column="65" />
         </state>
       </provider>
     </entry>
